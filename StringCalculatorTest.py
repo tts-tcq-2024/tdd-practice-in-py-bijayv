@@ -18,11 +18,9 @@ class TestStringCalculator(unittest.TestCase):
                 
     def test_expectSumWithNewlineDelimiter(self):
         self.assertEqual(add("1\n2,3"),6);
-    try:
-        def test_negative(self):
-            add("-1, -2, -3, 1, 2, 3")
-    except Exception as exception:
-        print (exception)
-        #assert(exception == "Negative No not allowed [-1, -2, -3]")
+    def test_negative(self):
+        add("-1, -2, -3, 1, 2, 3")
+
+        
 if __name__ == '__main__':
     unittest.main()
