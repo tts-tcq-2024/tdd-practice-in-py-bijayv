@@ -3,6 +3,7 @@ from StringCalculator import add
 class TestStringCalculator(unittest.TestCase):
         def expectZeroForEmptyInput(self):
                 self.assertEqual(add(""), 0)
+                self.assertEqual(add("0"), 0)
                 
         #def expectZeroForSingleZero(self):
                 #self.assertEqual(add("0"), 0)
