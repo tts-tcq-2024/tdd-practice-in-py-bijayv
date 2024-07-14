@@ -23,7 +23,7 @@ class TestStringCalculator(unittest.TestCase):
         add("-1, -2, -3, 1, 2, 3")
     def test_negative_numbers_exception():
 	    with pytest.raises(Exception, match = r'negatives not allowed \[-1, -2, -3\]'):
-		    string_calculator.add('-1, -2, -3, 1, 2, 3')
+		    add('-1, -2, -3, 1, 2, 3')
         
 if __name__ == '__main__':
     unittest.main()
