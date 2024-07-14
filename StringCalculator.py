@@ -1,4 +1,4 @@
-def add(num):
+def add1(num):
     if(num == ""):
         return 0
     n = number_split(num)
