@@ -34,7 +34,7 @@ def num_neg(sum,s,l):
     else:
         raise Exception ("Negative No not allowed " + str(l))
         #print("Negative No not allowed " + str(l))
-def add1(num):
+def add(num):
     if(num == ""):
         return 0
     n = number_split(num)
