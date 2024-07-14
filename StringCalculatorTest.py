@@ -20,7 +20,7 @@ class TestStringCalculator(unittest.TestCase):
         self.assertEqual(add("1\n2,3"),6);
     try:
         def test_negative(self):
-            self.add("-1, -2, -3, 1, 2, 3")
+            add("-1, -2, -3, 1, 2, 3")
     except Exception as exception:
         assert(str(exception) == "Negative No not allowed [-1, -2, -3]")
 if __name__ == '__main__':
