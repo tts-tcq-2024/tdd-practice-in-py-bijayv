@@ -9,7 +9,7 @@ class TestStringCalculator(unittest.TestCase):
                 
     def test_expectSumForTwoNumberst(self):
         self.assertEqual(add("1,2"), 3)
-                
+        
     def test_ignoreNumbersGreaterThan1000(self):
         self.assertEqual(add("1,1001"), 1)
                 
@@ -20,8 +20,8 @@ class TestStringCalculator(unittest.TestCase):
         self.assertEqual(add("1\n2,3"),6);
     try:
         def test_negative(self):
-            add("-1, -2, -3, 1, 2, 3")
+            self.add("-1, -2, -3, 1, 2, 3")
     except Exception as exception:
-        self.assertEqual(str(exception), "Negative No not allowed [-1, -2, -3]")
+        assertEqual(str(exception), "Negative No not allowed [-1, -2, -3]")
 if __name__ == '__main__':
     unittest.main()
