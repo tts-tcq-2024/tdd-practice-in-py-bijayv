@@ -20,5 +20,3 @@ class TestStringCalculator(unittest.TestCase):
                 self.assertEqual(add("1\n2,3"),6);
 if __name__ == '__main__':
     unittest.main()
-
-
