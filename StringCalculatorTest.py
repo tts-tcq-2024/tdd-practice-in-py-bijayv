@@ -21,7 +21,7 @@ class TestStringCalculator(unittest.TestCase):
     def test_negative(self):
         add("-1, -2, -3, 1, 2, 3")
     def test_negative_numbers_exception():
-	    assert(Exception, match = r'negatives not allowed \[-1, -2, -3\]'):
+	    assert(Exception == 'Negatives No not allowed \[-1, -2, -3\]'):
 		add('-1, -2, -3, 1, 2, 3')
         
 if __name__ == '__main__':
