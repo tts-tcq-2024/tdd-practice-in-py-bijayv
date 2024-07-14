@@ -1,9 +1,9 @@
 import unittest
 from StringCalculator import add1
 class TestStringCalculator(unittest.TestCase):
-        def expectZeroForEmptyInput(self):
-                self.assertEqual(add1(""), 0)
-                self.assertEqual(add1("0"), 0)
+    def expectZeroForEmptyInput(self):
+        self.assertEqual(add1(""), 0)
+        self.assertEqual(add1("0"), 0)
                 
         #def expectZeroForSingleZero(self):
                 #self.assertEqual(add("0"), 0)
