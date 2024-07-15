@@ -20,8 +20,10 @@ class TestStringCalculator(unittest.TestCase):
         self.assertEqual(add("1\n2,3"),6);
 	    
     def test_negative_numbers_exception(self):
-	    add("-1, -2, -3, 1, 2, 3")
-	    assert(Exception == "Negatives No not allowed [-1, -2, -3]")
+	    try:
+		add("-1, -2, -3, 1, 2, 3")
+	    except Exception as e:
+	        assert(e == "Negatives No not allowed [-1, -2, -3]")
 	
         
 if __name__ == '__main__':
