@@ -31,8 +31,8 @@ def number_check(a):
 def num_neg(sum,s,l):
     if (s == 0):
         return sum
-    #else:
-        #raise Exception ("Negative No not allowed " + str(l))
+    else:
+        raise Exception ("Negative No not allowed " + str(l))
         #print("Negative No not allowed " + str(l))
 def add(num):
     if(num == ""):
