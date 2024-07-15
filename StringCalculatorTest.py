@@ -23,6 +23,6 @@ class TestStringCalculator(unittest.TestCase):
         try:
 	        add("-1,-2,-3,1,2,3")
 	except Exception as e:
-		assert e == "Negative no Not allowed [-1, -2, -3]"
+	        assert e == "Negative no Not allowed [-1, -2, -3]"
 if __name__ == '__main__':
     unittest.main()
